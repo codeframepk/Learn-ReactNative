@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .changeClr {
+
+
+        color: red !important;
+
+       
+        background-color: black;
+        /* backgroundColor:#000000;
+        font-size: 56px;
+        fontSize:56; */
+
+      }
+
+      /*
+The flex item properties are:
+ flex-grow
+flex-shrink
+flex
+align-self */
+
+      /* The flex container properties are:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content */
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:  center;
+
+
+
+        height: 600px;
+        /* flex-wrap: wrap; */
+        /* align-content: space-around; */
+        background-color: DodgerBlue;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 
+    id="myid" class="sdf" >Flex-Box</h1>
+
+    <!-- <h1 class="header">second</h1>
+
+    <button onclick="changeInnerHtml()">click me</button> -->
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div style="align-self:start">3</div>
+      <!-- <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div> -->
+    </div>
+
+    <!-- <p onmouseout="" onmousemove="" onmouseout="">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, autem
+      inventore reiciendis est optio distinctio doloribus non libero sed in odio
+      ea illum modi necessitatibus quibusdam possimus molestiae sit accusamus?
+    </p> -->
+
+    <!-- <button onclick="alert('hello world')">click</button> -->
+
+    <!-- 
+    <form action="">
+
+        <input onChange="alert('s')" type="text">
+        <input onblur="alert('s')" type="text">
+        <input onfocus="" type="text">
+
+        
+    </form> -->
+
+    <script>
+      function changeInnerHtml() {
+      
+        document.getElementById("myid").style.backgroundColor = "green"
+
+        console.log(document.getElementById("myid"));
+      }
+
+      // let ref =    document.getElementsByClassName('header')
+
+      // console.log(ref);
+
+      //  let value =  prompt("Enter your name");
+
+      //    console.log( parseInt(value));
+
+      //   function nameFunction(num) {
+      //       return num;
+
+      //   }
+
+      //   let val = nameFunction(12);
+      //   console.log(val);
+
+      //    let name = "naveed";
+      //     let no3 = 121;
+      //     console.log( name + lastName);
+
+      // var no = 12;
+      // var no2 = 14;
+      //  console.log(no + no2);
+
+      //    const pi = 3.14975;
+      //    pi=  "sdf"
+      //     var fname = "naveed"
+
+      //     {
+      //         let name = "naveed"
+      //     }
+
+      // function nameFunction() {
+      //     var names = "Asif";
+      //     console.log(name);
+
+      // }
+
+      console.log();
+
+      var num = 50;
+
+      var num2 = 20;
+
+      // if (num > 50) {
+
+      //     console.log("log from if");
+
+      // }
+
+      //   if (num >= 50  && num2 <=18 ) {
+      //     console.log("num is greater than 50");
+      //   } else {
+      //     console.log("num is less than 50");
+      //   }
+
+      // switch (num) {
+      //     case num < :
+      //     {
+      //     console.log("num is 50");
+      //         break;
+      //         }
+      //     case 20:
+      //     {
+      //     console.log("num is 50");
+      //         break;
+      //         }
+
+      //     default:
+      //         break;
+      // }
+
+      //   let
+      //   const
+
+      //   for (var index = 0; index < 50; index++) {
+      //   // var element = array[index];
+      //   console.log(index);
+
+      //   }
+
+      // while (true) {
+
+      // }
+
+      //    do {
+
+      //    } while(true);
+
+      // var array = [0,"sdf","sf",10.3]
+
+      // array.forEach(element => {
+      //     console.log("element",element);
+
+      // });
+
+      // console.log(num);
+
+      // alert(num);
+
+      // alert(num);
+      // alert(num);
+
+      // alert(num);
+    </script>
+  </body>
+</html>
