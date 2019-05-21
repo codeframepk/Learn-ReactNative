@@ -72,6 +72,8 @@ class Section extends Component {
 
   changeState = () => {
     let prevval = this.state.counter;
+
+   
     this.setState({ counter: prevval + 1 });
   };
 
@@ -111,6 +113,8 @@ class Section extends Component {
     console.log("render method");
     return (
       <div>
+
+
         <input ref="name" type="text" placeholder="name" />
         <input
           onChange={this.onChangeHandler}
@@ -118,6 +122,8 @@ class Section extends Component {
           type="text"
           placeholder="class"
         />
+        
+        
         <button onClick={this.submit}>add</button>
 
         <table style={{ border: "2px solid black" }}>

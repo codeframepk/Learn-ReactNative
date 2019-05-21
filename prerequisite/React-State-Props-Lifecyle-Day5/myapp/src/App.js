@@ -8,9 +8,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Section data="data from app.js"/>
+        <Section data="data from app.js" />
         <Footer />
-
       </div>
     );
   }
