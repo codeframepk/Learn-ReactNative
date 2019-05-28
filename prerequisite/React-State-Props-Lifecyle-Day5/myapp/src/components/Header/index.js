@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux';
+import {addNewDataToReducer} from '../../redux/actions/actions'
 
 class Header extends Component {
   constructor(props) {
@@ -9,8 +11,16 @@ class Header extends Component {
     };
   }
 
-  userHandler = () => {
-    this.setState({ user: false });
+  userHandler =  () => {
+    
+    let data = {
+      name:'naveed',
+      class:'se'
+    }
+
+    this.props.addNewDataToReducer(data);
+   console.log('data from componenet header');
+   
   };
 
   render() {
@@ -18,7 +28,7 @@ class Header extends Component {
     return (
       <div>
         {user ? (
-          <button onClick={this.userHandler}>logout</button>
+          <button onClick={this.userHandler}>send data to store</button>
         ) : (
           <button>user login</button>
         )}
@@ -29,4 +39,13 @@ class Header extends Component {
   }
 }
 
-export default Header;
+const mapStateToProps = store =>{
+  console.log('store',store);
+  
+  return {
+    name:store.todosReducer.name,
+    login:store.userReducer.login
+  };
+}
+
+export default connect(mapStateToProps, {addNewDataToReducer})(Header)
